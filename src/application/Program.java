@@ -13,11 +13,11 @@ public class Program {
 
 		// o programa nao conhece a implementacao mas somente a interface. (injeção de dependencia sem explicitar a implementacao)
 		SellerDao sellerDao = DaoFactory.createSellerDao();
+		
+		System.out.println("=== TEST 1 seller findById ===");
 		Seller seller = sellerDao.findById(3);
 		
-		
 		System.out.println(seller);
-		
 		
 	}
 
